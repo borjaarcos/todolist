@@ -1,0 +1,48 @@
+body{
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  border-bottom: 1px gray dashed;
+}
+
+.list{
+  background: white;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 2px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tareas{
+  margin:0;
+  padding: 0;
+  list-style:none;
+}
+.input:focus{
+  outline: none;
+}
+.boton-hecho{
+  display: inline-block;
+  color: gray;
+  padding: 3px 6px;
+  border: 0;
+}
+
+.tareas .hecho{
+  text-decoration: line-through;
+}
+
+.tareas li:hover .boton-hecho{
+  opacity: 1;
+}
+
+/*Submit*/
+.submit{
+  background-color: white;
+  width: 100%;
+  border:1px solid black;
+  margin-top: 5px;
+}
