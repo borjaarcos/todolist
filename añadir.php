@@ -1,6 +1,7 @@
 <?php
 session_start();
-require_once 'index.php';
+
+include 'init.php';
 
 
 if($_POST && !empty($_POST['nombre'])) {
