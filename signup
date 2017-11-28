@@ -1,6 +1,7 @@
 <?php
   session_start();
   $contid = 3;
+  include 'init.php';
 
   $conn = new mysqli("localhost", "borja", "1234a", "todolist");
 
