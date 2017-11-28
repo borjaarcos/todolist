@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  $conn = new mysqli("localhost", "borja", "1234a", "todolist");
+  include 'init.php';
 
   if ($conn->connect_errno) {
       echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
