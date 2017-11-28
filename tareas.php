@@ -1,10 +1,11 @@
 <?php
 session_start();
-  include 'index.php';
+  include 'init.php';
 
-$tareassql="SELECT id, hecho, nombre FROM tareas WHERE usuario =".$_SESSION['id_usuario']."";
+$tareassql="SELECT id, hecho, nombre FROM tareas WHERE usuario ='".$_SESSION['id_usuario']."'";
 $resultado1=$conn->query($tareassql);
-
+var_dump($resultado1);
+var_dump($_SESSION['id']);
 
  ?>
 
@@ -20,6 +21,7 @@ $resultado1=$conn->query($tareassql);
   <body>
     <div class ="list">
       <h1>Tus tareas</h1>
+      <a href="cerrar.php" class="boton-hecho">Cerrar sesion</a>
       <<?php if (!empty($resultado1)): ?>
 
       <ul class="tareas">
